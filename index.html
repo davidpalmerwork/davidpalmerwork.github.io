@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="style.css">  
+    <script src="app.js"></script>
+    
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BrightBlog Site</title>
     </head>
 <body>
-    <header>
+    <header id="main-header">
         <h1 id="logo">BrightBlog site</h1>
         <nav>
-            <ul>
+            <ul id="nav-ul">
                 <li><a href="/home" class="navbutton">Home</a></li>
                 <li><a href="/about" class="navbutton">About</a></li>
                 <li><a href="/blog" class="navbutton">Blog</a></li>
@@ -21,117 +23,121 @@
     </header>
     <main>
         <!-- Our main content will go here -->
-        <article>
-            <hgroup>
-                <!-- Our headings will go here -->
-                <h2>Ten Amusing Facts About Dogs</h2>
-                <h3>Read time: 5 minutes</h3>
-            </hgroup>
-            <main>
-                <!-- Our blog post will go here -->
-                <p> 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, est!
-                </p>
-                <blockquote>
-                    "I love puppies!" - <cite>Dave Palmer, 2024</cite>
-                </blockquote>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ex nobis dolores laudantium excepturi neque!
-                </p>                
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab et itaque voluptate dolor! Maxime laudantium dolore officia tenetur eaque incidunt.
-                </p>
-            </main>
-            <footer>
-                <!-- Our author details will go here -->
-                <H2>Author: Dave Palmer</H2> 
-                <img src="https://placebear.com/100/100" alt="A profile pic of a bear">
-                <h3>Last posted: 21-08-2024</h3>
-                <a href="https://www.brightnetwork.co.uk/"  target="_blank">Author's profile</a>
-            </footer>
-        </article>
-        <article>
-            <hgroup>
-                <!-- Our headings will go here -->
-                <h2>Another Ten Amusing Facts About Dogs</h2>
-                <h3>Read time: 5 minutes</h3>
-            </hgroup>
-            <main>
-                <!-- Our blog post will go here -->
-                <p> 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, est!
-                </p>
-                <blockquote>
-                    "I love puppies!" - <cite>Dave Palmer, 2024</cite>
-                </blockquote>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ex nobis dolores laudantium excepturi neque!
-                </p>                
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab et itaque voluptate dolor! Maxime laudantium dolore officia tenetur eaque incidunt.
-                </p>
-            </main>
-            <footer>
-                <!-- Our author details will go here -->
-                <H2>Author: Dave Palmer</H2> 
-                <img src="https://placebear.com/100/100" alt="A profile pic of a bear">
-                <h3>Last posted: 21-08-2024</h3>
-                <a href="https://www.brightnetwork.co.uk/"  target="_blank">Author's profile</a>
-            </footer>
-        </article>
-        <article>
-            <hgroup>
-                <!-- Our headings will go here -->
-                <h2>Yet Another Ten Amusing Facts About Dogs</h2>
-                <h3>Read time: 5 minutes</h3>
-            </hgroup>
-            <main>
-                <!-- Our blog post will go here -->
-                <p> 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, est!
-                </p>
-                <blockquote>
-                    "I love puppies!" - <cite>Dave Palmer, 2024</cite>
-                </blockquote>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ex nobis dolores laudantium excepturi neque!
-                </p>                
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab et itaque voluptate dolor! Maxime laudantium dolore officia tenetur eaque incidunt.
-                </p>
-            </main>
-            <footer>
-                <!-- Our author details will go here -->
-                <H2>Author: Dave Palmer</H2> 
-                <img src="https://placebear.com/100/100" alt="A profile pic of a bear">
-                <h3>Last posted: 21-08-2024</h3>
-                <a href="https://www.brightnetwork.co.uk/"  target="_blank">Author's profile</a>
-            </footer>
-        </article>
-        <aside>
-            <!-- Our side menu will go here -->
-            <section>
-                <h4>Filter by month</h4>
-                <nav>
-                    <ul>
-                        <li><a href=""></a>Filter for January</li>
-                        <li><a href=""></a>Filter for February</li>
-                        <li><a href=""></a>Filter for March</li>
-                    </ul>
-                </nav>
-            </section>
-            <section>
-                <h4>Filter by Category</h4>
-                <nav>
-                    <ul>
-                        <li><a href=""></a>Puppies</li>
-                        <li><a href=""></a>Sealions</li>
-                        <li><a href=""></a>Lions</li>
-                        <li><a href=""></a>Chipmunks</li>
-                    </ul>
-                </nav>
-            </section>
-        </aside>
+         <div id="main-content">
+            <aside></aside>
+                <!-- Our side menu will go here -->
+                <section> 
+                    <h4>Filter by month</h4>
+                    <nav>
+                        <ul>
+                            <li><a href=""></a>Filter for January</li>
+                            <li><a href=""></a>Filter for February</li>
+                            <li><a href=""></a>Filter for March</li>
+                        </ul>
+                    </nav>
+
+                    <h4>Filter by Category</h4>
+                    <nav>
+                        <ul>
+                            <li><a href=""></a>Puppies</li>
+                            <li><a href=""></a>Sealions</li>
+                            <li><a href=""></a>Lions</li>
+                            <li><a href=""></a>Chipmunks</li>
+                        </ul>
+                    </nav>
+                </section>
+            </aside>
+            <div>
+                <article>
+                    <hgroup>
+                        <!-- Our headings will go here -->
+                        <h2>Ten Amusing Facts About Dogs</h2>
+                        <h3>Read time: 5 minutes</h3>
+                    </hgroup>
+                    <main>
+                        <!-- Our blog post will go here -->
+                        <p> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, est!
+                        </p>
+                        <blockquote>
+                            "I love puppies!" - <cite>Dave Palmer, 2024</cite>
+                        </blockquote>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ex nobis dolores laudantium excepturi neque!
+                        </p>                
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab et itaque voluptate dolor! Maxime laudantium dolore officia tenetur eaque incidunt.
+                        </p>
+                    </main>
+                    <footer>
+                        <!-- Our author details will go here -->
+                        <H2>Author: Dave Palmer</H2> 
+                        <img src="https://placebear.com/100/100" alt="A profile pic of a bear">
+                        <h3>Last posted: 21-08-2024</h3>
+                        <a href="https://www.brightnetwork.co.uk/"  target="_blank">Author's profile</a>
+                    </footer>
+                </article>
+                <article>
+                    <hgroup>
+                        <!-- Our headings will go here -->
+                        <h2>Another Ten Amusing Facts About Dogs</h2>
+                        <h3>Read time: 5 minutes</h3>
+                    </hgroup>
+                    <main>
+                        <!-- Our blog post will go here -->
+                        <p> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, est!
+                        </p>
+                        <blockquote>
+                            "I love puppies!" - <cite>Dave Palmer, 2024</cite>
+                        </blockquote>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ex nobis dolores laudantium excepturi neque!
+                        </p>                
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab et itaque voluptate dolor! Maxime laudantium dolore officia tenetur eaque incidunt.
+                        </p>
+                    </main>
+                    <footer>
+                        <!-- Our author details will go here -->
+                        <H2>Author: Dave Palmer</H2> 
+                        <img src="https://placebear.com/100/100" alt="A profile pic of a bear">
+                        <h3>Last posted: 21-08-2024</h3>
+                        <a href="https://www.brightnetwork.co.uk/"  target="_blank">Author's profile</a>
+                    </footer>
+                </article>
+                <article>
+                    <hgroup>
+                        <!-- Our headings will go here -->
+                        <h2>Yet Another Ten Amusing Facts About Dogs</h2>
+                        <h3>Read time: 5 minutes</h3>
+                    </hgroup>
+                    <main>
+                        <!-- Our blog post will go here -->
+                        <p> 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, est!
+                        </p>
+                        <blockquote>
+                            "I love puppies!" - <cite>Dave Palmer, 2024</cite>
+                        </blockquote>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ex nobis dolores laudantium excepturi neque!
+                        </p>                
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab et itaque voluptate dolor! Maxime laudantium dolore officia tenetur eaque incidunt.
+                        </p>
+                    </main>
+                    <footer>
+                        <!-- Our author details will go here -->
+                        <H2>Author: Dave Palmer</H2> 
+                        <img src="https://placebear.com/100/100" alt="A profile pic of a bear">
+                        <h3>Last posted: 21-08-2024</h3>
+                        <a href="https://www.brightnetwork.co.uk/"  target="_blank">Author's profile</a>
+                    </footer>
+                </article>
+            </div>
+           
+         </div>
         <h2>Sign up for more puppies!</h2>
         <form action="" method="post">
             <label for="first_name">First Name:</label>
@@ -173,7 +179,9 @@
             <input type="checkbox" id="subscribe" name="subscribe">
             <label for="subscribe">Subscribe to newsletter</label><br>
 
+            <br>
             <input type="submit" value="Send!"><br>
+            <br>
         </form>
     </main>
     <footer>
@@ -181,18 +189,14 @@
         <h2>BrightBlog site</h2>
         <section>
             <nav>
-                <ul>
-                    <div>
+                <ul id="footer-ul">
                         <li><a href="">Home</a></li>
                         <li><a href="">About us</a></li>
                         <li><a href="">Contact</a></li>
                         <li><a href="">Careers</a></li>
-                    </div>
-                    <div>
                         <li><a href="">Privacy policy</a></li>
                         <li><a href="">Terms & conditions</a></li>
                         <li><a href="">Cookie policy</a></li>
-                    </div>
                 </ul>
             </nav>
         </section>

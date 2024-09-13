@@ -26,19 +26,43 @@ nav>ul{
 
 body>header{
     background-color: orange;
-    color: #017374 
+    color: #017374;
+    display: flex;
+    height: 12vh;
+    justify-content:space-around;
+}
+
+#nav-ul{
+    display:flex;
+}
+
+#nav-ul > li{
+    padding: 8px;
+    margin: 16px;
+}
+
+body>header>nav>ul{
+    list-style: none;
+    text-decoration: none;
 }
 
 .navbutton{
     color:white;
     text-decoration: none;
-    
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 10%;
 }
 
-body>main>article{
+body>main article{
     margin:auto;
     width: 70%;
 }
+
+#main-content{
+    display:flex
+}
+
 
 form{
     text-align: center;
@@ -54,12 +78,35 @@ img{
 
 body>footer{
     background-color: orange;
+    
 }
 
+body>footer>section>nav>ul{
+    display: flex;
+    justify-content:space-around;
+    margin-left: 12px;
+    color: white;
+    }
+
+#footer-ul>li>a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 10%;
+    justify-content: spacearound;
+}
+
+#nav-ul{
+    display:flex;
+}
 
 body>footer{
     padding: 16px;
     color: white;
     text-align: center;
-}
+    }
 
+    
